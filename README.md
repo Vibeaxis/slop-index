@@ -1,4 +1,7 @@
 # VAX Slop Index
+[Website](https://vibeaxis.com/ai-slop-index/) •
+[Product Hunt](https://www.producthunt.com/products/ai-slop-index) •
+[AlternativeTo](https://alternativeto.net/software/ai-slop-index/)
 
 Quantifies synthetic, empty, or manipulative language in content — a quick **slop score (0–100)** based on repetition, burstiness, lexical diversity, clichés, hedges, passive voice, buzzwords, paragraph rhythm, and simplicity. _High score = more slop._
 
