@@ -1,0 +1,10 @@
+# CITATION.cff
+cff-version: 1.2.0
+title: "AI Slop Index"
+message: "If you use this tool, please cite this repository."
+authors:
+  - family-names: Bann
+    given-names: Jason
+repository-code: https://github.com/vibeaxis/slop-index
+license: MIT
+version: 1.1.2
