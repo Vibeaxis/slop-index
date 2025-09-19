@@ -1,39 +1,73 @@
 <!doctype html>
 <html lang="en">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>VAX Micro UX — Official</title>
-<meta name="description" content="Micro-interaction helpers for WordPress. Small, fast, receipt-first UX tweaks from VibeAxis.">
-<link rel="icon" href="favicon.png">
-<style>
-  :root{--bg1:#c9ffe6;--bg2:#b8dcff}
-  html,body{margin:0;background:linear-gradient(135deg,var(--bg1),var(--bg2));font:16px/1.6 system-ui,Segoe UI,Roboto,sans-serif;color:#111}
-  .wrap{max-width:820px;margin:10vh auto;padding:24px}
-  .card{background:#fff;border-radius:18px;box-shadow:0 14px 40px rgba(0,0,0,.08);padding:28px}
-  h1{margin:0 0 8px;font-weight:800;font-size:28px}
-  .sub{margin:0 0 16px;color:#333}
-  a{color:#0b79d0;text-decoration:none}
-  .grid{display:grid;gap:12px}
-  .kicker{font-size:14px;color:#555;margin-top:12px}
-  footer{margin-top:18px;font-size:14px;color:#444}
-</style>
-<div class="wrap">
-  <div class="card">
-    <h1>VAX Micro UX</h1>
-    <p class="sub">Micro-interaction helpers for WordPress. Small, fast, receipt-first UX tweaks from VibeAxis.</p>
-    <div class="grid">
-      <div>• <strong>Author:</strong> VibeAxis (Jason Bann)</div>
-      <div>• <strong>Text domain:</strong> <code>vax-micro-ux</code></div>
-      <div>• <strong>License:</strong> MIT</div>
-      <div>• <strong>Support:</strong> <a href="mailto:legal@vibeaxis.com">legal@vibeaxis.com</a></div>
-    </div>
-    <p class="kicker">Ownership: WordPress.org owner <strong>vibeaxis</strong>; committers may include <strong>viablem</strong>.</p>
-    <p style="margin-top:14px">
-      <a href="https://github.com/youruser/vax-micro-ux">GitHub repo</a> ·
-      <a href="https://vibeaxis.com/">VibeAxis</a> ·
-      <a href="https://huggingface.co/vibeaxis">Tools on Hugging Face</a>
-    </p>
-    <footer>© VibeAxis • Make the algorithms nervous.</footer>
-  </div>
-</div>
+<head>
+  <meta charset="utf-8" />
+  <title>Slop Index — VibeAxis</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="On-page slop detector: clichés, hedges, repetition, sentence bloat. Client-side, fast, ruthless." />
+  <meta property="og:title" content="Slop Index — VibeAxis" />
+  <meta property="og:description" content="On-page slop detector: clichés, hedges, repetition, sentence bloat. Client-side, fast, ruthless." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root{--mint:#c9ffe6;--sky:#b8dcff;--ink:#0b0f14;--line:#e6ebf2;--tang:#ff8a3d;--mag:#ff3da0}
+    html,body{margin:0;background:linear-gradient(135deg,var(--mint),var(--sky));font:16px/1.6 system-ui,Segoe UI,Inter,Roboto,Arial,sans-serif;color:var(--ink)}
+    .wrap{max-width:980px;margin:10vh auto;padding:24px}
+    .card{background:#fff;border-radius:20px;box-shadow:0 14px 40px rgba(0,0,0,.08);padding:28px}
+    header{display:flex;gap:14px;align-items:center;margin-bottom:10px}
+    .logo{width:36px;height:36px;border-radius:12px;background:conic-gradient(from 210deg,var(--tang),var(--mag));display:grid;place-items:center;color:#fff;font:900 14px/1 system-ui}
+    h1{margin:0;font-weight:900;font-size:28px;letter-spacing:-.02em}
+    .sub{margin:6px 0 18px;color:#2b313b}
+    .btns{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 18px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid var(--line);text-decoration:none;color:inherit;background:#fafbff}
+    .btn.primary{border:0;background:linear-gradient(135deg,var(--mint),var(--sky));font-weight:800}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:8px}
+    @media (min-width:860px){.grid{grid-template-columns:1fr 1fr}}
+    h3{margin:6px 0 6px;font-size:16px}
+    ul{margin:8px 0 0 18px}
+    code,pre code{background:#f5f7fb;border:1px solid var(--line);padding:.2em .45em;border-radius:8px;font:600 12px ui-monospace,SFMono-Regular,Consolas,Menlo,monospace}
+    pre{white-space:pre-wrap}
+    hr{border:none;height:1px;background:var(--line);margin:18px 0}
+    footer{margin-top:10px;font-size:14px;color:#495361}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <header>
+        <div class="logo">VAX</div>
+        <div>
+          <h1>Slop Index</h1>
+          <p class="sub">On-page slop detector: clichés, hedges, repetition, sentence bloat. Client-side, fast, ruthless.</p>
+        </div>
+      </header>
+
+      <div class="btns">
+        <a class="btn primary" href="https://github.com/Vibeaxis/slop-index" target="_blank" rel="noopener">GitHub Repo</a>
+        <a class="btn" href="https://huggingface.co/spaces/Vibeaxis/Slop-Index-Lite" target="_blank" rel="noopener">Live Demo (HF)</a>
+        <a class="btn" href="https://vibeaxis.com/the-ai-slop-index-grade-any-page-in-60-seconds/" target="_blank" rel="noopener">Write-up</a>
+        <a class="btn" href="https://vibeaxis.com/" target="_blank" rel="noopener">VibeAxis</a>
+      </div>
+
+      <div class="grid">
+        <div>
+          <h3>What it flags</h3>
+          <ul>
+            <li>“We believe…”, “Unlock…”, “Leverage…”—empty calories.</li>
+            <li>Hedges (“might”, “could”, “appears to”).</li>
+            <li>Repetition loops + sentence bloat.</li>
+          </ul>
+          <p>Privacy note: the lite demo is client-side only. No uploads, no storage.</p>
+        </div>
+        <div>
+          <h3>Use it</h3>
+          <p>Install from the repo, or try the <b>Slop Index Lite</b> demo and paste any URL or text. Shipping use? Embed the lib and run checks on content before publish.</p>
+          <p>Integrations welcome—open an issue with your CMS/environment.</p>
+        </div>
+      </div>
+
+      <hr />
+      <footer>© VibeAxis — mint/sky, tiny tangerine &amp; magenta. No tracking, no dark patterns.</footer>
+    </section>
+  </main>
+</body>
 </html>
