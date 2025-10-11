@@ -1,0 +1,7 @@
+- pipeline: t23
+  name: T23
+  refs:
+  - refs/heads/main
+  events:
+  - type: WEBHOOK
+  fail_on_prepare_env_warning: true
